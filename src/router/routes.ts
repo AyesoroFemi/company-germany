@@ -13,6 +13,18 @@ const routes = {
       path: '/examples/:id',
       label: 'Edit example'
     }
+  },
+  company: {
+    path: '/company',
+    label: 'Company'
+  },
+  tags: {
+    path: '/tags',
+    label: 'Tags'
+  },
+  news: {
+    path: '/news',
+    label: 'News'
   }
 };
 

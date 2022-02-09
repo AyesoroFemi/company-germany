@@ -1,4 +1,4 @@
-import './Examples.scss';
+import './Company.scss';
 import React, {useState, useMemo, useEffect} from 'react';
 import {useNavigate} from 'react-router-dom';
 import routes from '../../../router/routes';
@@ -8,7 +8,7 @@ import {ListItem} from '../../../listItem';
 import Input from '../../elements/input/Input';
 import axios from 'axios';
 
-const Examples = () => {
+const Company = () => {
 
     const navigate = useNavigate();
     const [examplesList, setExamplesList] = useState<object[]>([]);
@@ -162,4 +162,4 @@ const Examples = () => {
     );
 };
 
-export default Examples;
+export default Company;

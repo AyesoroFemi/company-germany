@@ -8,8 +8,14 @@ import { ReactComponent as IconTags } from '../../../assets/images/pricetags-sha
 const Nav = () => {
   return (
       <nav className="nav">
-        <NavLink to={routes.examples.path} className="nav__link">
-        <div><IconTags /></div> <div className="route-name">{routes.examples.label}</div>
+        <NavLink to={routes.company.path} className="nav__link">
+        <div><IconTags /></div> <div className="route-name">{routes.company.label}</div>
+        </NavLink>
+        <NavLink to={routes.tags.path} className="nav__link">
+        <div><IconTags /></div> <div className="route-name">{routes.tags.label}</div>
+        </NavLink>
+        <NavLink to={routes.news.path} className="nav__link">
+        <div><IconTags /></div> <div className="route-name">{routes.news.label}</div>
         </NavLink>
       </nav>
   );

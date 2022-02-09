@@ -5,8 +5,8 @@ const Sidebar = () => {
   return (
       <aside className="sidebar">
         <header className="sidebar__header">
-          <div className="sidebar__company-name">Example MVP</div>
-          <div className="sidebar__subtitle">ACME Inc.</div>
+          <div className="sidebar__company-name">Competitive Database</div>
+          <div className="sidebar__subtitle">ALDI SUD Dienstleistungs-SE & co.oHG</div>
         </header>
         <Nav />
       </aside>
