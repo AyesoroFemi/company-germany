@@ -3,7 +3,9 @@
 .nav {
   display: flex;
   flex-direction: column;
-  margin: 3rem 0;
+  // margin: 3rem 0;
+  height: 70vh;
+  justify-content: center;
 
   &__link {
     display: flex;
@@ -42,6 +44,7 @@
     &.active {
       @include linkBackground($color-active-background);
       cursor: default;
+      // color: lightblue;
     }
   }
 }
