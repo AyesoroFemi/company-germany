@@ -1,5 +1,6 @@
 import './page.scss';
 import React, { ReactNode } from 'react';
+import { ReactComponent as IconPlus } from '../../../assets/images/square-plus.svg';
 
 const Page = (props: {
   heading?: ReactNode | string;
@@ -18,7 +19,7 @@ const Page = (props: {
               onClick={props.handleHeadingButton}
               className={"button " + (props.buttonType ? props.buttonType : '')}
           >
-            {props.headingButton}
+            {props.headingButton == 'Create Company' ? <IconPlus /> : ''}{props.headingButton }
           </button>
           <div className={'activity-indicator' + (props.busy ? ' busy' : '')}></div>
         </div>
