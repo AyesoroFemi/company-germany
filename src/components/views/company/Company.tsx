@@ -106,9 +106,9 @@ const Company = () => {
     return (
         <article className="example-list">
             <Page
-                heading="Examples"
+                heading="Companies"
                 buttonType="is-info"
-                headingButton="Create example"
+                headingButton="Create Company"
                 className="list"
                 handleHeadingButton={handleCreate}
                 busy={loading}
