@@ -1,0 +1,78 @@
+@import "../../../assets/styles/var";
+
+.card-body{
+    margin: 2rem 2rem 2rem 2rem;
+    background-color: #fff;
+    padding: .05rem 0;
+    box-shadow: 3px 5px 10px rgb(194, 192, 192);
+}
+
+.card-container {
+    margin: 2rem 0;
+    display: flex;
+    gap: 1.2rem;
+    padding: 0 2rem;
+}
+.card-box{
+    width: 70px;
+    height: 70px;
+    background-color: rgb(72, 97, 121);
+}
+
+.sub-container{
+    transform: translateY(-.2rem);
+    h3 {
+        font-size: 2rem;
+    }
+}
+
+.facts {
+    display: flex;
+    transform: translateY(-1rem);
+    gap: 4rem;
+
+    .fact-letter{
+        font-size: .8rem;
+        font-weight: 700;
+        color: $color-font-pale;
+    }
+    .headline {
+        font-size: 1.5rem;
+        font-weight: 600;
+        transform: translateY(-1rem);
+        color: $color-font-pale;
+    }
+}
+
+.price-tag{
+    margin-inline-start: auto; 
+}
+.card-text{
+    font-size: 1.3rem;
+    padding: 0 2rem;
+    transform: translateY(-2rem);
+    color: $color-font-pale;
+}
+.card-links{
+    display: flex;
+    gap: 1rem;
+    padding: 0 2rem;
+    transform: translateY(-2rem);
+
+    .card-tag{
+        color: $color-secondary;
+        font-weight: 600;
+        background-color: $color-background;
+        padding: 5px 10px;
+        border-radius: 0.9rem;
+        text-decoration: none;
+    }
+    .card-file{
+        margin-inline-start: auto; 
+        color: black;
+    }
+    .card-icons{
+        color: black;
+    }
+}
+

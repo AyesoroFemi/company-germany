@@ -7,6 +7,7 @@ import Actions from '../../layout/actions/Actions';
 import {ListItem} from '../../../listItem';
 import Input from '../../elements/input/Input';
 import axios from 'axios';
+import ItemCard from '../../elements/itemCard/ItemCard';
 
 const Company = () => {
 
@@ -127,36 +128,10 @@ const Company = () => {
                     <button className="button" onClick={handleAction}>Apply</button>
                 </Actions>
 
-                <div className={'table-container' + (loading ? ' hidden' : '')}>
-                    <table className="table is-hoverable is-striped is-narrow is-fullwidth">
-                        <thead>
-                        <tr>
-                            <th />
-                            <th>id</th>
-                            <th>description</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        {list && list.map((listItem, index) => {
-
-                            const item = listItem.item as any;
-                            const itemId = item.username.replace(/\s+/g, '-');
-
-                            return <tr key={index} className={'_' + itemId} onClick={e => editItem(e, item)}>
-                                <td className="first-column" onClick={stopPropagation}>
-                                    <input
-                                        type="checkbox"
-                                        checked={listItem.checked}
-                                        onChange={e => handleCheck(e, listItem)}
-                                    />
-                                </td>
-                                <td className='unique-identifier-cell'>{item.username}</td>
-                                <td>{item.text}</td>
-                            </tr>;
-                        })}
-                        </tbody>
-                    </table>
-                </div>
+                <ItemCard />
+                <ItemCard />
+                <ItemCard />
+              
             </Page>
         </article>
     );
