@@ -1,5 +1,6 @@
 import './input.scss';
 import React, { FocusEventHandler } from 'react';
+import { AiFillCloseCircle } from "react-icons/ai";
 
 const Input = (props: {
   type: 'text' | 'select' | 'number' | 'textarea';
@@ -62,7 +63,7 @@ const Input = (props: {
 
       case 'select':
         return (
-            <div className={'select ' + (props.multiselect ? 'is-multiple' : '')}>
+            <div className={'select ' + (props.multiselect ? 'is-multiple' : '')}> 
             <select required={props.required} name={props.name} onChange={handleChange} value={props.value} multiple={!!props.multiselect}>
                 <option value="" disabled>{props.placeholder ? props.placeholder : 'Please choose'}</option>
                 {props.options && props.options.map((element, index) => (
